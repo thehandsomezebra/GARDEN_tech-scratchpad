@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+    <channel>
+      <title>Tech Scratchpad</title>
+      <link>https://techscratchpad.garden.handsomezebra.com</link>
+      <description>Last 10 notes on Tech Scratchpad</description>
+      <generator>Quartz -- quartz.jzhao.xyz</generator>
+      <item>
+    <title>The Tech Scratchpad</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/</guid>
+    <description>This site is a digital garden, a pile of notes as my scratchpad for my thoughts on stuff n things. It’s not a blog. It’s not chronological.</description>
+    <pubDate>Thu, 03 Jul 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>2025 BSides Detroit</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/conferences/2025/2025-BSides-Detroit</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/conferences/2025/2025-BSides-Detroit</guid>
+    <description>So this was the first conference I ever talked at! I gave a talk about vibe coding and securing the inputs n outputs.</description>
+    <pubDate>Sat, 10 May 2025 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>2024 Advent of Code</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/advent-of-code/2024/2024-Advent-of-Code</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/advent-of-code/2024/2024-Advent-of-Code</guid>
+    <description>2024 Advent of Code See the code: github.com/thehandsomezebra/GARDEN_tech-scratchpad Lemme tell ya.</description>
+    <pubDate>Sun, 01 Dec 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>2024 GrrCon</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-GrrCon</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-GrrCon</guid>
+    <description>Sept 26-27 2024 Lol, another one that I have bad notes but some pics. I have a trend. Anyhow. here ya go.</description>
+    <pubDate>Thu, 26 Sep 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Kicking in the Door to the Cloud Exploiting Cloud Provider Vulnerabilities for Initial Access Sunday 10-52 AM</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Kicking-in-the-Door-to-the-Cloud-Exploiting-Cloud-Provider-Vulnerabilities-for-Initial-Access-Sunday-10-52-AM</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Kicking-in-the-Door-to-the-Cloud-Exploiting-Cloud-Provider-Vulnerabilities-for-Initial-Access-Sunday-10-52-AM</guid>
+    <description>… Back to 2024 BSides Vegas and DefCon … www.youtube.com/watch defcon.org/html/defcon-32/dc-32-speakers.html#54449 Kicking in the Door to the Cloud: Exploiting Cloud Provider Vulnerabilities for Initial Access Friday at 12:30 in LVCC - L1 - HW1-11-03 (Track 3) 45 minutes Nick Frichette Staff Securit...</description>
+    <pubDate>Sun, 11 Aug 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Kubernetes Attack Simulation The Definitive Guide</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Kubernetes-Attack-Simulation-The-Definitive-Guide</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Kubernetes-Attack-Simulation-The-Definitive-Guide</guid>
+    <description>… Back to 2024 BSides Vegas and DefCon … www.youtube.com/watch defcon.org/html/defcon-32/dc-32-creator-talks.html#54649 Kubernetes Attack Simulation: The Definitive Guide Sunday at 11:30 in LVCC - L1 - HW4-04-02 (Creator Stage 3) 30 minutes | Demo 💻 Leo Tsaousis Senior Security Consultant at WithSe...</description>
+    <pubDate>Sun, 11 Aug 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Unexpected Leaks in AWS Transit Gateways Sunday 12-35 PM</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Unexpected-Leaks-in-AWS-Transit-Gateways-Sunday-12-35-PM</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Unexpected-Leaks-in-AWS-Transit-Gateways-Sunday-12-35-PM</guid>
+    <description>… Back to 2024 BSides Vegas and DefCon … www.youtube.com/watch William Taylor’s talk on AWS Transit Gateways was a perfect case study in the gap between design and reality.</description>
+    <pubDate>Sun, 11 Aug 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Disenshittify or die! How hackers can seize the means of computation - Cory Doctorow Saturday 11-58 AM</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Disenshittify-or-die!-How-hackers-can-seize-the-means-of-computation---Cory-Doctorow-Saturday-11-58-AM</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Disenshittify-or-die!-How-hackers-can-seize-the-means-of-computation---Cory-Doctorow-Saturday-11-58-AM</guid>
+    <description>… Back to 2024 BSides Vegas and DefCon … www.youtube.com/watch This follow-up talk from 2023 DefCon on dis-enshitification laid out the playbook for how platforms decay… they start by being good to users, then lock them in, and pivot to serving business customers before extracting all the value for ...</description>
+    <pubDate>Sat, 10 Aug 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Voter village talk with secretary of state new hampshire Saturday at 2-07 PM</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Voter-village-talk-with-secretary-of-state-new-hampshire-Saturday-at-2-07-PM</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Voter-village-talk-with-secretary-of-state-new-hampshire-Saturday-at-2-07-PM</guid>
+    <description>… Back to 2024 BSides Vegas and DefCon … The talk centers around the importance of election security and voter confidence in the United States, specifically highlighting the speaker’s experiences as the Secretary of State in New Hampshire.</description>
+    <pubDate>Sat, 10 Aug 2024 00:00:00 GMT</pubDate>
+  </item><item>
+    <title>Breaching AWS accounts through shadow resources Friday 227 PM</title>
+    <link>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Breaching-AWS-accounts-through-shadow-resources-Friday-227-PM</link>
+    <guid>https://techscratchpad.garden.handsomezebra.com/conferences/2024/2024-BSides-and-DefCon/Breaching-AWS-accounts-through-shadow-resources-Friday-227-PM</guid>
+    <description>… Back to 2024 BSides Vegas and DefCon … www.youtube.com/watch This talk on “Shadow Resources” was an interesting look into how AWS services can create predictable S3 buckets behind the scenes, which can then be taken over by an attacker.</description>
+    <pubDate>Fri, 09 Aug 2024 00:00:00 GMT</pubDate>
+  </item>
+    </channel>
+  </rss>
