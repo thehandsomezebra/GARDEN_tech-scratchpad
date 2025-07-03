@@ -1,0 +1,231 @@
+{
+  "main": {
+    "id": "10b49af4076bd27c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d7a2c9985f16059",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a41a314e41e615f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "advent of code/2024/2024 Advent of Code.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "2024 Advent of Code"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e743f893bf23a7eb",
+    "type": "split",
+    "children": [
+      {
+        "id": "150fac38888a3a46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f62e35c9a4f87a7e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5ec79d7e8cf3f235",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0895acc4e0eab888",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 366.5
+  },
+  "right": {
+    "id": "5ea4e2c5aa6ee1f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "00ebeacb1f03d982",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b406367096f42d1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "conferences/2024/2024 codemash/2024 codemash.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2024 codemash"
+            }
+          },
+          {
+            "id": "1a18ff9feb715ff2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "conferences/2024/2024 codemash/2024 codemash.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024 codemash"
+            }
+          },
+          {
+            "id": "7dbab41cc3c5c740",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "b144f215377d9c43",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "conferences/2024/2024 codemash/2024 codemash.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024 codemash"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "a41a314e41e615f5",
+  "lastOpenFiles": [
+    "advent of code/2024/python/README.advent-of-code 2024 python.md",
+    "advent of code/2024/2024 Advent of Code.md",
+    "conferences/2024/2024 GrrCon.md",
+    "advent of code/2024/Makefile",
+    "advent of code/2024/docker-compose.yml",
+    "advent of code/2024/python/tests/test_day1b.py",
+    "advent of code/2024/python/tests/test_day2b.py",
+    "advent of code/2024/python/tests/test_day4b.py",
+    "advent of code/2024/python/tests/test_day4a.py",
+    "advent of code/2024/python/tests/test_day2a.py",
+    "advent of code/2024/python/tests/test_day1a.py",
+    "advent of code/2024/python/utils/utils.py",
+    "advent of code/2024/python/daily/day3a.py",
+    "conferences/2024/Pasted image 20250703160206.png",
+    "conferences/2024/Pasted image 20250703160116.png",
+    "conferences/2024/Pasted image 20250703160042.png",
+    "conferences/2025/2025 BSides Detroit.md",
+    "conferences/2023/2023 Black Hat and DefCon.md",
+    "conferences/2023/2023 Grrcon.md",
+    "conferences/2024/2024 Codemash/2024 CodeMash.md",
+    "conferences/2024/2024 BSides and DefCon/2024 BSides Vegas and DefCon.md",
+    "conferences/2022/2022 GrrCon.md",
+    "conferences/2020/2020 Codemash.md",
+    "conferences/2023/Pasted image 20250703155351.png",
+    "conferences/2023/Pasted image 20250703155153.png",
+    "conferences/2023/Pasted image 20250703155140.png",
+    "conferences/2022/Pasted image 20250703154705.png",
+    "conferences/2022/Pasted image 20250703154559.png",
+    "conferences/2022/Pasted image 20250703154519.png",
+    "conferences/2022/Pasted image 20250703154401.png",
+    "conferences/Untitled.canvas",
+    "conferences/2024/2024 BSides and DefCon/Redis or Not Argo CD & GitOps from an Attacker’s Perspective CVE-2024-31989 1030a.md",
+    "conferences/2024/2024 BSides and DefCon/Kubernetes Attack Simulation The Definitive Guide.md",
+    "conferences/2024/2024 BSides and DefCon/Unexpected Leaks in AWS Transit Gateways Sunday 12-35 PM.md",
+    "conferences/2024/2024 BSides and DefCon/PXL_20240811_182722925.jpg.md",
+    "conferences/2024/2024 BSides and DefCon/Kicking in the Door to the Cloud Exploiting Cloud Provider Vulnerabilities for Initial Access Sunday 10-52 AM.md",
+    "conferences/2024/2024 BSides and DefCon/Disenshittify or die! How hackers can seize the means of computation - Cory Doctorow Saturday 11-58 AM.md",
+    "conferences/2024/2024 BSides and DefCon/Saturday 11:27 AM.md",
+    "conferences/2024/2024 BSides and DefCon/Exploit k8s via misconfiguration .yaml in CSP environments Friday 125pm.md",
+    "conferences/2024/2024 BSides and DefCon/Social Engineering like you're Picard Friday 3-26 PM.md",
+    "conferences/2024/2024 BSides and DefCon/Breaching AWS accounts through shadow resources Friday 227 PM.md",
+    "conferences/2024/2024 BSides and DefCon/Catch them all! Detection Engineering and Purple Teaming in the Cloud.md",
+    "conferences/2024/2024 BSides and DefCon/Gone in 60 Seconds… How Azure AD Entra ID Tenants are Compromised.md",
+    "conferences/2024/2024 BSides and DefCon/Skytalks - Session 11 500p.md",
+    "conferences/2024/2024 BSides and DefCon/Nothing went to plan because you didn't have a plan Wednesday 259 PM.md",
+    "conferences/2024/2024 BSides and DefCon/Discover the hidden vulnerability interlligence within CISA's KEV catalog Wednesday 2-30 PM.md",
+    "conferences/2024/2024 BSides and DefCon/The road to Developer's hearts Wednesday 1-56 PM.md"
+  ]
+}

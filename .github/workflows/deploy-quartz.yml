@@ -1,0 +1,54 @@
+# .github/workflows/deploy.yml
+
+name: Build and Deploy Quartz Site
+
+# This workflow runs on every push to the 'main' branch.
+on:
+  push:
+    branches:
+      - main # Change this if your primary working branch has a different name
+
+# Allows the workflow to push changes to the 'web' branch.
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: "pages-deployment" # Prevents multiple runs from conflicting
+      cancel-in-progress: true
+    steps:
+      # Step 1: Check out the code from the 'main' branch
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up the Node.js environment required by Quartz
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # You can change this to match your required Node.js version
+
+      # Step 3: Install dependencies and build the Quartz site
+      - name: Install dependencies and build
+        run: |
+          npm install
+          # Build the site using your content directory and specifying the output directory
+          npx quartz build --content-dir tech-scratchpad --output docs
+
+      # Step 4: Deploy the built site to the 'web' branch
+      - name: Deploy to 'web' branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # The token is provided automatically by GitHub
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # The branch you want to deploy to
+          publish_branch: web
+          # The folder that contains your built site
+          publish_dir: ./docs
+          # The CNAME for your custom domain. The action will create the CNAME file for you.
+          # IMPORTANT: Replace this with your actual custom domain.
+          cname: techscratchpad.garden.handsomezebra.com
+          # The commit message for the deployment
+          commit_message: "Deploy: ${{ github.event.head_commit.message }}"
+

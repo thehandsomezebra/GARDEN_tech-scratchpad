@@ -1,0 +1,381 @@
+// ---
+// Handsome Zebra Theme for Quartz
+// File: quartz/styles/themes/_index.scss
+// ---
+
+// Base imports, just like the default theme structure
+@use "sass:color";
+@use "../variables.scss" as *;
+
+// By chaining the selector, we increase its specificity to ensure it overrides the default theme.
+html[saved-theme="dark"][saved-theme="dark"] {
+  // --- DARK THEME DEFINITION ---
+  // 1. Define your custom colors as RGB values for compatibility
+  --kinda-black-rgb: 16, 14, 23;
+  --dark-purple-rgb: 26, 16, 44;
+  --light-purple-rgb: 42, 26, 64;
+  --custom-teal-rgb: 11, 206, 175;
+  --custom-teal-hover-rgb: 11, 146, 124;
+  --glow-magenta-rgb: 244, 0, 161;
+  --glow-amber-rgb: 255, 199, 0;
+  --text-main-rgb: 255, 255, 255;
+  --text-muted-rgb: 160, 160, 160;
+  --text-faint-rgb: 102, 102, 102;
+
+  // 2. Map RGB values to color variables
+  --kinda-black: rgb(var(--kinda-black-rgb));
+  --dark-purple: rgb(var(--dark-purple-rgb));
+  --light-purple: rgb(var(--light-purple-rgb));
+  --custom-teal: rgb(var(--custom-teal-rgb));
+  --custom-teal-hover: rgb(var(--custom-teal-hover-rgb));
+  --glow-magenta: rgb(var(--glow-magenta-rgb));
+  --glow-amber: rgb(var(--glow-amber-rgb));
+  --text-main: rgb(var(--text-main-rgb));
+  --text-muted: rgb(var(--text-muted-rgb));
+  --text-faint: rgb(var(--text-faint-rgb));
+
+  // 3. Map your colors to Quartz's main theme variables
+  color-scheme: dark;
+  --background-primary: var(--kinda-black);
+  --background-secondary: var(--dark-purple);
+  --background-primary-alt: var(--dark-purple);
+  --text-normal: var(--text-main);
+  --text-muted: var(--text-muted);
+  --text-faint: var(--text-faint);
+  --text-accent: var(--custom-teal);
+  --text-accent-hover: var(--custom-teal-hover);
+  --text-highlight-bg: rgba(var(--custom-teal-rgb), 0.15);
+  --link-color: var(--custom-teal);
+  --link-color-hover: var(--custom-teal-hover);
+  --light: var(--kinda-black);
+  --lightgray: var(--dark-purple);
+  --gray: var(--text-muted);
+  --dark: var(--text-main);
+  --secondary: var(--custom-teal);
+  --tertiary: var(--glow-magenta);
+  --highlight: var(--text-highlight-bg);
+  --hr-color: transparent;
+  --code-background: var(--light-purple);
+  
+  // Graph colors - using direct hex values to fix JS error on published site
+  --graph-line: #a0a0a0;
+  --graph-node: #0bceaf;
+  --graph-node-unresolved: #666666;
+  --graph-node-current: #f400a1;
+  --graph-node-tag: #ffc700;
+  
+  // Heading colors
+  --h1-color: var(--custom-teal);
+  --h2-color: var(--custom-teal);
+  --h3-color: var(--custom-teal);
+  --h4-color: var(--custom-teal);
+  --h5-color: var(--custom-teal);
+  --h6-color: var(--custom-teal);
+
+  // 4. Font Setup
+  @import url("https://fonts.googleapis.com/css2?family=Abel&family=Fira+Code:wght@700&family=Inter:wght@400;500&family=Roboto:wght@400;500;700&display=swap");
+  --default-font: "Inter", sans-serif;
+  --font-interface: "Inter", sans-serif;
+  --font-text: "Inter", sans-serif;
+  --font-monospace: "Fira Code", monospace;
+  --titleFont: "Abel", sans-serif; // For main page title
+  --headerFont: "Abel", sans-serif; // For h1, h2, etc.
+  --bodyFont: "Inter", sans-serif;
+  --codeFont: "Fira Code", monospace;
+
+  // --- COMPONENT-SPECIFIC STYLES ---
+  // These rules are nested inside the high-specificity selector
+  body {
+    // Main Body Background
+    background-color: var(--background-primary);
+
+    // Links Font
+    a {
+      font-family: "Roboto", sans-serif;
+    }
+
+    // Sidebars
+    .sidebar, .right-sidebar {
+      background-color: var(--dark-purple);
+    }
+
+    // Heading Banner and all other headings
+    .page-title, h1, h2, h3, h4, h5, h6 {
+      font-family: var(--headerFont);
+    }
+
+    // Buttons
+    button, .button {
+      background-color: var(--dark-purple);
+      color: var(--text-muted);
+      border: 1px solid var(--light-purple);
+      &:hover {
+        background-color: var(--light-purple);
+        color: var(--text-main);
+      }
+    }
+
+    // Icon Glow Effect
+    .sidebar .sidebar-toggle:hover svg,
+    .header-icon:hover svg {
+      filter: drop-shadow(0 0 8px var(--glow-magenta));
+      color: var(--glow-magenta);
+    }
+
+    // Gradient Horizontal Lines
+    hr {
+      height: 3px;
+      background-image: linear-gradient(to right, var(--glow-magenta), var(--glow-amber));
+      border-radius: 3px;
+      border: none;
+    }
+
+    // Code Blocks
+    pre {
+      background-color: var(--dark-purple);
+    }
+    :not(pre) > code {
+      background-color: var(--light-purple);
+    }
+    
+    // Explorer Sidebar Styles
+    .explorer-content {
+      // Style for the file/folder links
+      a {
+        padding: 0.2rem 0.5rem;
+        border-radius: 8px;
+        transition: background-color 0.2s ease-in-out;
+        
+        // Active and hover states for the rounded block
+        &.active, &:hover {
+          background-color: var(--light-purple);
+          color: var(--text-main);
+        }
+      }
+
+      // Add icons to files and folders
+      --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>');
+      --folder-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg>');
+
+      .folder-container::before, .explorer-ul li > a::before {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+        background-color: var(--custom-teal);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+      }
+
+      .folder-container::before {
+        -webkit-mask-image: var(--folder-icon);
+        mask-image: var(--folder-icon);
+      }
+
+      .explorer-ul li > a::before {
+        -webkit-mask-image: var(--file-icon);
+        mask-image: var(--file-icon);
+      }
+    }
+    
+    // Graph View Styling
+    .graph {
+      & > .graph-outer {
+        border: 1px solid var(--light-purple);
+        background-color: var(--light-purple);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+
+        & > .global-graph-icon {
+          color: var(--text-muted);
+          &:hover {
+            background-color: var(--dark-purple);
+          }
+        }
+      }
+      & > .global-graph-outer {
+        & > .global-graph-container {
+          border: 1px solid var(--glow-magenta);
+          background-color: var(--kinda-black);
+        }
+      }
+    }
+  }
+}
+
+// --- LIGHT THEME DEFINITION ---
+html[saved-theme="light"][saved-theme="light"] {
+  // 1. Define your light theme colors
+  --light-bg-rgb: 248, 249, 250; // Very light gray
+  --light-secondary-bg-rgb: 233, 236, 239; // Slightly darker gray
+  --light-border-rgb: 222, 226, 230;
+  --light-text-main-rgb: 33, 37, 41; // Near black
+  --light-text-muted-rgb: 108, 117, 125; // Dark gray
+  --white: #ffffff;
+
+  // Keep accent colors the same
+  --custom-teal-rgb: 11, 206, 175;
+  --custom-teal-hover-rgb: 11, 146, 124;
+  --glow-magenta-rgb: 244, 0, 161;
+  --glow-amber-rgb: 255, 199, 0;
+
+  // 2. Map RGB values to color variables
+  --light-bg: rgb(var(--light-bg-rgb));
+  --light-secondary-bg: rgb(var(--light-secondary-bg-rgb));
+  --light-border: rgb(var(--light-border-rgb));
+  --light-text-main: rgb(var(--light-text-main-rgb));
+  --light-text-muted: rgb(var(--light-text-muted-rgb));
+  --custom-teal: rgb(var(--custom-teal-rgb));
+  --custom-teal-hover: rgb(var(--custom-teal-hover-rgb));
+  --glow-magenta: rgb(var(--glow-magenta-rgb));
+  --glow-amber: rgb(var(--glow-amber-rgb));
+
+  // 3. Map your colors to Quartz's main theme variables
+  color-scheme: light;
+  --background-primary: var(--light-bg);
+  --background-secondary: var(--light-secondary-bg);
+  --background-primary-alt: var(--light-secondary-bg);
+  --text-normal: var(--light-text-main);
+  --text-muted: var(--light-text-muted);
+  --text-faint: var(--light-text-muted);
+  --text-accent: var(--custom-teal);
+  --text-accent-hover: var(--custom-teal-hover);
+  --text-highlight-bg: rgba(var(--custom-teal-rgb), 0.15);
+  --link-color: var(--custom-teal);
+  --link-color-hover: var(--custom-teal-hover);
+  --light: var(--light-bg);
+  --lightgray: var(--light-secondary-bg);
+  --gray: var(--light-text-muted);
+  --dark: var(--light-text-main);
+  --secondary: var(--custom-teal);
+  --tertiary: var(--glow-magenta);
+  --highlight: var(--text-highlight-bg);
+  --hr-color: transparent;
+  --code-background: var(--light-secondary-bg);
+  
+  // Graph colors - using direct hex values
+  --graph-line: #dee2e6;
+  --graph-node: #0bceaf;
+  --graph-node-unresolved: #6c757d;
+  --graph-node-current: #f400a1;
+  --graph-node-tag: #ffc700;
+  
+  // Heading colors
+  --h1-color: var(--custom-teal);
+  --h2-color: var(--custom-teal);
+  --h3-color: var(--custom-teal);
+  --h4-color: var(--custom-teal);
+  --h5-color: var(--custom-teal);
+  --h6-color: var(--custom-teal);
+
+  // 4. Font Setup (already imported above)
+  --default-font: "Inter", sans-serif;
+  --font-interface: "Inter", sans-serif;
+  --font-text: "Inter", sans-serif;
+  --font-monospace: "Fira Code", monospace;
+  --titleFont: "Abel", sans-serif;
+  --headerFont: "Abel", sans-serif;
+  --bodyFont: "Inter", sans-serif;
+  --codeFont: "Fira Code", monospace;
+
+  // --- COMPONENT-SPECIFIC STYLES ---
+  body {
+    background-color: var(--background-primary);
+    a { font-family: "Roboto", sans-serif; }
+    .sidebar, .right-sidebar { background-color: var(--light-secondary-bg); }
+    .page-title, h1, h2, h3, h4, h5, h6 { font-family: var(--headerFont); }
+    .page-title {
+      background-color: var(--light-secondary-bg);
+    }
+    button, .button {
+      background-color: var(--light-secondary-bg);
+      color: var(--light-text-muted);
+      border: 1px solid var(--light-border);
+      &:hover {
+        background-color: var(--light-border);
+        color: var(--light-text-main);
+      }
+    }
+    .sidebar .sidebar-toggle:hover svg,
+    .header-icon:hover svg {
+      filter: drop-shadow(0 0 8px var(--glow-magenta));
+      color: var(--glow-magenta);
+    }
+    hr {
+      height: 3px;
+      background-image: linear-gradient(to right, var(--glow-magenta), var(--glow-amber));
+      border-radius: 3px;
+      border: none;
+    }
+    pre { background-color: var(--light-secondary-bg); }
+    :not(pre) > code { background-color: var(--light-border); }
+    
+    // Explorer Sidebar Styles for Light Mode
+    .explorer-content {
+      a {
+        padding: 0.2rem 0.5rem;
+        border-radius: 8px;
+        transition: background-color 0.2s ease-in-out;
+        
+        &.active, &:hover {
+          background-color: var(--light-border);
+          color: var(--light-text-main);
+        }
+      }
+
+      --file-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>');
+      --folder-icon: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path></svg>');
+
+      .folder-container::before, .explorer-ul li > a::before {
+        content: '';
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.5em;
+        background-color: var(--light-text-muted);
+        -webkit-mask-repeat: no-repeat;
+        mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+      }
+
+      .folder-container::before {
+        -webkit-mask-image: var(--folder-icon);
+        mask-image: var(--folder-icon);
+      }
+
+      .explorer-ul li > a::before {
+        -webkit-mask-image: var(--file-icon);
+        mask-image: var(--file-icon);
+      }
+    }
+    
+    // Graph View Styling
+    .graph {
+      & > .graph-outer {
+        border: 1px solid var(--light-border);
+        background-color: var(--light-secondary-bg);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 1rem;
+
+        & > .global-graph-icon {
+          color: var(--light-text-muted);
+          &:hover {
+            background-color: var(--light-border);
+          }
+        }
+      }
+      & > .global-graph-outer {
+        & > .global-graph-container {
+          border: 1px solid var(--light-border);
+          background-color: var(--light-bg);
+        }
+      }
+    }
+  }
+}

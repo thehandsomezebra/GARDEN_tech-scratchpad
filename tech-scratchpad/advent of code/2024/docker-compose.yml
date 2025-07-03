@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  bash:
+    build: ./bash
+    command: bash /app/${DAY}.sh
+    volumes:
+      - ./inputs:/app/inputs
+    environment:
+      - DAY
+  python:
+    build: ./python
+    command: ["python", "/app/${DAY}.py"] 
+    volumes:
+      - ./inputs:/inputs
+    environment:
+      - DAY

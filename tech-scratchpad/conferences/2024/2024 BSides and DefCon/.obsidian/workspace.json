@@ -1,0 +1,153 @@
+{
+  "main": {
+    "id": "a269210fa1089274",
+    "type": "split",
+    "children": [
+      {
+        "id": "08dbe23d8c03ba33",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4fc1cbf543dea476",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Redis or Not Argo CD & GitOps from an Attacker’s Perspective CVE-2024-31989 1030a.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "33fece5475c88da9",
+    "type": "split",
+    "children": [
+      {
+        "id": "f7c1da353c9d8a56",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "56ead7e0c25788de",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "94fcd048e5c0e4ca",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ead76dc1d49e5624",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "d15232e76b7124c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "f06e4f67a6f82158",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c77ba3efc645332",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Redis or Not Argo CD & GitOps from an Attacker’s Perspective CVE-2024-31989 1030a.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f30c4a8a951a2546",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Redis or Not Argo CD & GitOps from an Attacker’s Perspective CVE-2024-31989 1030a.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "2a208525be3ee814",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "200b1383e46255aa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Redis or Not Argo CD & GitOps from an Attacker’s Perspective CVE-2024-31989 1030a.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "4fc1cbf543dea476",
+  "lastOpenFiles": [
+    "index.md"
+  ]
+}
