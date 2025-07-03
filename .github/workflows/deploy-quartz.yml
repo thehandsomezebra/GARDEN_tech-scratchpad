@@ -40,7 +40,7 @@ jobs:
           # Change directory to where package.json is located
           cd ./quartz
           # Build the site using relative paths for content and output
-          npx quartz build --content-dir ../tech-scratchpad --output ../docs
+          npx quartz build --directory ../tech-scratchpad --output ../docs
 
       # Step 4: Deploy the built site to the 'web' branch
       - name: Deploy to 'web' branch
