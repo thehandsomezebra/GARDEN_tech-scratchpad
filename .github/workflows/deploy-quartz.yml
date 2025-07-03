@@ -30,12 +30,15 @@ jobs:
         with:
           node-version: '22' # You can change this to match your required Node.js version
 
+      - name: Install Quartz dependencies
+        # This assumes your package.json is in the 'quartz' sub-directory
+        run: npm --prefix ./quartz install
+
       # Step 3: Install dependencies and build the Quartz site
       - name: Install dependencies and build
         run: |
           # Change directory to where package.json is located
-          cd quartz
-          npm install
+          cd ./quartz
           # Build the site using relative paths for content and output
           npx quartz build --content-dir ../tech-scratchpad --output ../docs
 
