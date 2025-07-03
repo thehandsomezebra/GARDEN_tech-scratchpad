@@ -2,14 +2,13 @@
 
 name: Build and Deploy Quartz Site
 
-# This workflow runs on every push to the 'main' branch.
+# This workflow runs on every push to the 'master' branch, and can also be run manually.
 on:
   push:
     branches:
-      - main # Change this if your primary working branch has a different name
-  
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+      - master # Change this if your primary working branch has a different name
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+
 # Allows the workflow to push changes to the 'web' branch.
 permissions:
   contents: write
@@ -21,7 +20,7 @@ jobs:
       group: "pages-deployment" # Prevents multiple runs from conflicting
       cancel-in-progress: true
     steps:
-      # Step 1: Check out the code from the 'main' branch
+      # Step 1: Check out the code from the 'master' branch
       - name: Checkout repository
         uses: actions/checkout@v4
 
@@ -34,9 +33,11 @@ jobs:
       # Step 3: Install dependencies and build the Quartz site
       - name: Install dependencies and build
         run: |
+          # Change directory to where package.json is located
+          cd quartz
           npm install
-          # Build the site using your content directory and specifying the output directory
-          npx quartz build --content-dir tech-scratchpad --output docs
+          # Build the site using relative paths for content and output
+          npx quartz build --content-dir ../tech-scratchpad --output ../docs
 
       # Step 4: Deploy the built site to the 'web' branch
       - name: Deploy to 'web' branch
