@@ -7,7 +7,9 @@ on:
   push:
     branches:
       - main # Change this if your primary working branch has a different name
-
+  
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 # Allows the workflow to push changes to the 'web' branch.
 permissions:
   contents: write
